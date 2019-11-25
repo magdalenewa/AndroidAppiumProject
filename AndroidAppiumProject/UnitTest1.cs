@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Appium.Enums;
+using OpenQA.Selenium.Appium.MultiTouch;
 using OpenQA.Selenium.Appium.Service;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
@@ -21,8 +23,8 @@ namespace AndroidAppiumProject
 
         public static void Main()
         {
-           // appiumLocalService = new AppiumServiceBuilder().UsingAnyFreePort().Build();
-           // appiumLocalService.Start();
+            appiumLocalService = new AppiumServiceBuilder().UsingAnyFreePort().Build();
+            appiumLocalService.Start();
             var appiumOptions = new AppiumOptions();
 
             appiumOptions.AddAdditionalCapability(MobileCapabilityType.DeviceName, "device");
@@ -37,15 +39,26 @@ namespace AndroidAppiumProject
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             AppiumWebElement approveBox = driver.FindElementByAndroidUIAutomator("new UiSelector().textContains(\"Approve\");");
             approveBox.Click();
-
-            // driver.FindElementByAndroidUIAutomator("new UiSelector().textContains(\"Approve\");");
-            // wait.Until(ExpectedConditions.ElementIsVisible(By.LinkText("Jobs")));
-            // driver.FindElementByAndroidUIAutomator("new UiSelector().textContains(\"Approve\")");
-            //driver.CloseApp();
+            AppiumWebElement background = driver.FindElementByAndroidUIAutomator("new UiSelector().textContains(\"Dräger CSE Mobile\");");
+            background.Click();
 
 
         }
 
+     /*   public void SwipeTest()
+        {
+            
+            var element = driver.FindElementById("android:id/content");
+            Point point = element.Coordinates.LocationInDom;
+            Size size = element.Size;
+            new TouchAction(driver)
+                .Press(point.X + 5, point.Y + 5)
+                .Wait(200)
+                .MoveTo(point.X + size.Width - 5, point.Y + size.Height - 5)
+                .Release()
+                .Perform();
+        }
+        */
 
         public void TestInitalize()
         {
