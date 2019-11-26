@@ -1,0 +1,11 @@
+Try {
+   $result = Invoke-WebRequest `
+                 -uri "http://7899c9a4.ngrok.io" `
+                 -Method GET
+   $httperrorcode = $result.Statuscode
+} 
+Catch [System.Net.WebException]{
+   [System.Net.HttpWebResponse]$result = [System.Net.HttpWebResponse] $_.Exception.Response
+   $httperrorcode  = $result.StatusCode.Value__
+   $error.clear()
+}
