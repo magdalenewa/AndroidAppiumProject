@@ -1,0 +1,1143 @@
+2019-11-20 18:43:48,802 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: Please use the following command line syntax:
+TOSCACIClient.exe -m local|distributed
+
+   bei TOSCAContinuousIntegration.TOSCACIClient.CommandLineArguments.CLArgumentParser.ParseArguments(String[] args, Object arguments)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 18:44:32,817 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: Please use the following command line syntax:
+TOSCACIClient.exe -m local|distributed
+
+   bei TOSCAContinuousIntegration.TOSCACIClient.CommandLineArguments.CLArgumentParser.ParseArguments(String[] args, Object arguments)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 18:46:10,433 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: Please use the following command line syntax:
+TOSCACIClient.exe -m local|distributed
+
+   bei TOSCAContinuousIntegration.TOSCACIClient.CommandLineArguments.CLArgumentParser.ParseArguments(String[] args, Object arguments)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 18:48:16,219 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 18:48:16,236 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 18:48:16,237 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 18:48:16,254 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 18:48:44,872 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws
+2019-11-20 18:48:44,896 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 18:48:44,898 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 18:48:52,929 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: TCApiException occured
+Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 18:51:02,269 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 18:51:02,280 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 18:51:02,280 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 18:51:02,291 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 18:51:07,798 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws
+2019-11-20 18:51:07,813 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 18:51:07,815 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 18:51:16,158 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: TCApiException occured
+Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 18:55:47,755 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost:8732/TOSCARemoteExecutionService
+2019-11-20 18:55:47,767 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-20 18:55:47,767 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-20 18:55:50,069 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://localhost:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 127.0.0.1:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:02:10,072 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:02:10,084 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:02:10,085 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:02:10,095 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:02:15,881 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws
+2019-11-20 19:02:15,894 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:02:15,895 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:02:24,502 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: TCApiException occured
+Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCI\ClientC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:06:33,286 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost:8732/TOSCARemoteExecutionService
+2019-11-20 19:06:33,300 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-20 19:06:33,300 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-20 19:06:35,568 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://localhost:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 127.0.0.1:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:08:20,290 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost/TOSCARemoteExecutionService
+2019-11-20 19:08:20,302 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-20 19:08:20,302 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-20 19:08:20,661 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://localhost/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Der Remoteserver hat einen Fehler zurückgegeben: (404) Nicht gefunden.
+   bei System.Net.HttpWebRequest.GetResponse()
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:09:12,378 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost/TOSCARemoteExecutionService
+2019-11-20 19:09:12,390 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-20 19:09:12,390 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-20 19:09:12,650 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://localhost/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Der Remoteserver hat einen Fehler zurückgegeben: (404) Nicht gefunden.
+   bei System.Net.HttpWebRequest.GetResponse()
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:10:30,562 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:10:30,574 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:10:30,574 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:10:30,585 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:10:36,244 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws
+2019-11-20 19:10:36,256 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\Jenkins\workspace\Tosca CI on LocalC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\Jenkins\workspace\Tosca CI on LocalC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:10:36,256 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:10:44,350 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: TCApiException occured
+Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\Jenkins\workspace\Tosca CI on LocalC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\Jenkins\workspace\Tosca CI on LocalC:\Tosca_Projects\Tosca_CommonRepositories\Drager2.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:13:16,867 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:13:16,882 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:13:16,882 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:13:16,894 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:13:22,840 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:13:25,658 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:13:25,979 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:13:26,444 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - More than one matching BuildRootFolder found! Number of found BuildRootFolders: 4
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:13:26,445 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:13:33,199 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+More than one matching BuildRootFolder found! Number of found BuildRootFolders: 4
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:19:49,167 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:19:49,179 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:19:49,179 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:19:49,190 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:19:54,991 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:20:02,926 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Workspace locked by another process
+Inner Exception: 
+Tricentis.TCCore.Persistency.Repository.UnableToLockRepositoryException: Workspace locked by another process 'NB-224276.71912:mpabianek'
+   bei Tricentis.TCCore.Base.Workspace.AddOrWaitForLock(TimeSpan maxTimeToWait)
+   bei Tricentis.TCCore.Base.Workspace.LockWorkspaceExclusive(TimeSpan maxTimeToWait)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:20:02,926 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:20:16,601 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: TCApiException occured
+Workspace locked by another process
+Inner Exception: 
+Tricentis.TCCore.Persistency.Repository.UnableToLockRepositoryException: Workspace locked by another process 'NB-224276.71912:mpabianek'
+   bei Tricentis.TCCore.Base.Workspace.AddOrWaitForLock(TimeSpan maxTimeToWait)
+   bei Tricentis.TCCore.Base.Workspace.LockWorkspaceExclusive(TimeSpan maxTimeToWait)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:20:24,160 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:20:24,173 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:20:24,173 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:20:24,186 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:20:29,756 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:20:32,387 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:20:32,742 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:20:33,145 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - More than one matching BuildRootFolder found! Number of found BuildRootFolders: 4
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:20:33,145 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:20:40,466 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+More than one matching BuildRootFolder found! Number of found BuildRootFolders: 4
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:22:09,425 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:22:09,436 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:22:09,436 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:22:09,448 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:22:15,052 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:22:17,683 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:22:17,962 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:22:18,337 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - More than one matching BuildRootFolder found! Number of found BuildRootFolders: 4
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:22:18,337 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:22:28,298 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+More than one matching BuildRootFolder found! Number of found BuildRootFolders: 4
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:28:51,694 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:28:51,709 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:28:51,709 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:28:51,721 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:28:57,429 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:29:00,014 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:29:00,313 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:29:00,661 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - No ContinuousIntegrationBuildRootFolder found in project! Please flag at least one ExecutionListFolder with the custom property 'ContinuousIntegrationBuildRootFolder' and the value 'True', or define a BuildRootFolder within you 'TestConfig.xml'.
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:29:00,661 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:29:07,367 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+No ContinuousIntegrationBuildRootFolder found in project! Please flag at least one ExecutionListFolder with the custom property 'ContinuousIntegrationBuildRootFolder' and the value 'True', or define a BuildRootFolder within you 'TestConfig.xml'.
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:36:46,347 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:36:46,377 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:36:46,377 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:36:46,409 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:37:05,608 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:37:10,647 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:37:11,409 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:37:12,368 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - No ContinuousIntegrationBuildRootFolder found in project! Please flag at least one ExecutionListFolder with the custom property 'ContinuousIntegrationBuildRootFolder' and the value 'True', or define a BuildRootFolder within you 'TestConfig.xml'.
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:37:12,369 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:37:25,985 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+No ContinuousIntegrationBuildRootFolder found in project! Please flag at least one ExecutionListFolder with the custom property 'ContinuousIntegrationBuildRootFolder' and the value 'True', or define a BuildRootFolder within you 'TestConfig.xml'.
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:39:19,997 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:39:20,025 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:39:20,025 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:39:20,044 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:39:31,400 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:39:36,312 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:39:37,016 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:39:37,898 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - No ContinuousIntegrationBuildRootFolder found in project! Please flag at least one ExecutionListFolder with the custom property 'ContinuousIntegrationBuildRootFolder' and the value 'True', or define a BuildRootFolder within you 'TestConfig.xml'.
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:39:37,902 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:39:51,015 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+No ContinuousIntegrationBuildRootFolder found in project! Please flag at least one ExecutionListFolder with the custom property 'ContinuousIntegrationBuildRootFolder' and the value 'True', or define a BuildRootFolder within you 'TestConfig.xml'.
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetCIBuildRootFolder(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:42:06,946 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:42:06,964 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:42:06,964 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:42:06,997 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:42:17,853 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:42:22,683 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:42:23,343 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:42:23,700 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Single ContinuousIntegrationBuildRootFolder found: Remote
+2019-11-20 19:42:24,262 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Failed to identify any ContinuousIntegration ExecutionLists!
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetAllCIExecutionLists(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetExecutionObjectsForCurrentExecution(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:42:24,263 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:42:36,750 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+Failed to identify any ContinuousIntegration ExecutionLists!
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetAllCIExecutionLists(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetExecutionObjectsForCurrentExecution(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:44:44,053 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:44:44,090 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:44:44,090 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:44:44,111 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:44:54,954 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:44:59,780 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:45:00,453 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:45:00,795 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Single ContinuousIntegrationBuildRootFolder found: Remote
+2019-11-20 19:45:01,362 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Failed to identify any ContinuousIntegration ExecutionLists!
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetAllCIExecutionLists(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetExecutionObjectsForCurrentExecution(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-20 19:45:01,362 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:45:20,696 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: CIException occured
+Failed to identify any ContinuousIntegration ExecutionLists!
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetAllCIExecutionLists(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.GetExecutionObjectsForCurrentExecution(TCProject project)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.ExecuteCITest(String resultType, TCWorkspace workspace)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-20 19:46:50,994 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:46:51,021 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:46:51,021 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:46:51,051 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:47:02,432 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:47:07,279 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:47:07,970 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:47:08,309 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Single ContinuousIntegrationBuildRootFolder found: Remote
+2019-11-20 19:47:08,362 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - Checkout on OwnedItem: Remote, Nodepath: /Execution/Drager/Remote
+2019-11-20 19:47:08,368 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - TCFolder '/Execution/Drager/Remote' does not need to be included for synchronization
+2019-11-20 19:47:09,372 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - OwnedItem is checked out.
+2019-11-20 19:48:36,965 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-20 19:48:36,995 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-20 19:48:36,995 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-20 19:48:37,041 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-20 19:48:52,654 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-20 19:48:57,515 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-20 19:48:58,177 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-20 19:48:58,504 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Single ContinuousIntegrationBuildRootFolder found: Remote
+2019-11-20 19:48:58,551 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - Checkout on OwnedItem: Remote, Nodepath: /Execution/Drager/Remote
+2019-11-20 19:48:58,552 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - TCFolder '/Execution/Drager/Remote' does not need to be included for synchronization
+2019-11-20 19:48:59,585 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - OwnedItem is checked out.
+2019-11-20 19:58:18,500 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Creating junit test result...
+2019-11-20 19:58:19,362 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-20 19:58:35,139 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: UnauthorizedAccessException occured
+Der Zugriff auf den Pfad "C:\Program Files (x86)\Jenkins\jobs" wurde verweigert.
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   bei System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.CiXmlWriter.Write(XmlDocument xdoc, String path)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.XmlResultHandler.WriteResult(XmlDocument xdoc, String path)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.XmlResultHandler.HandleResult(XmlDocument result)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractDispatcher`1.HandleResult(XmlDocument result)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 16:59:00,321 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: Please use the following command line syntax:
+TOSCACIClient.exe -m local|distributed
+
+   bei TOSCAContinuousIntegration.TOSCACIClient.CommandLineArguments.CLArgumentParser.ParseArguments(String[] args, Object arguments)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 16:59:09,964 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: Please use the following command line syntax:
+TOSCACIClient.exe -m local|distributed
+
+   bei TOSCAContinuousIntegration.TOSCACIClient.CommandLineArguments.CLArgumentParser.ParseArguments(String[] args, Object arguments)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 16:59:38,959 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-21 16:59:38,971 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-21 16:59:38,971 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-21 16:59:38,986 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-21 16:59:45,444 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-21 16:59:53,648 [1] ERROR TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController - Workspace locked by another process
+Inner Exception: 
+Tricentis.TCCore.Persistency.Repository.UnableToLockRepositoryException: Workspace locked by another process 'NB-224276.75324:mpabianek'
+   bei Tricentis.TCCore.Base.Workspace.AddOrWaitForLock(TimeSpan maxTimeToWait)
+   bei Tricentis.TCCore.Base.Workspace.LockWorkspaceExclusive(TimeSpan maxTimeToWait)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+2019-11-21 16:59:53,649 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-21 17:00:00,875 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: TCApiException occured
+Workspace locked by another process
+Inner Exception: 
+Tricentis.TCCore.Persistency.Repository.UnableToLockRepositoryException: Workspace locked by another process 'NB-224276.75324:mpabianek'
+   bei Tricentis.TCCore.Base.Workspace.AddOrWaitForLock(TimeSpan maxTimeToWait)
+   bei Tricentis.TCCore.Base.Workspace.LockWorkspaceExclusive(TimeSpan maxTimeToWait)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:00:15,414 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-21 17:00:15,430 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-21 17:00:15,430 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-21 17:00:15,445 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-21 17:00:21,663 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-21 17:00:24,412 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-21 17:00:24,749 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-21 17:00:24,902 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Single ContinuousIntegrationBuildRootFolder found: Remote
+2019-11-21 17:00:24,923 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - Checkout on OwnedItem: Remote, Nodepath: /Execution/Drager/Remote
+2019-11-21 17:00:24,925 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - TCFolder '/Execution/Drager/Remote' does not need to be included for synchronization
+2019-11-21 17:00:25,396 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - OwnedItem is checked out.
+2019-11-21 17:01:08,444 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Creating junit test result...
+2019-11-21 17:01:08,786 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-21 17:01:18,607 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: UnauthorizedAccessException occured
+Der Zugriff auf den Pfad "C:\Users\MPabianek\Desktop\Drager\Jenkins" wurde verweigert.
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   bei System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.CiXmlWriter.Write(XmlDocument xdoc, String path)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.XmlResultHandler.WriteResult(XmlDocument xdoc, String path)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.XmlResultHandler.HandleResult(XmlDocument result)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractDispatcher`1.HandleResult(XmlDocument result)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:01:46,481 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher -  Client started
+2019-11-21 17:01:46,511 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Starting local execution
+2019-11-21 17:01:46,511 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher - Configuration File Path:
+2019-11-21 17:01:46,525 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Getting license...
+2019-11-21 17:01:52,533 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Opening workspace: C:\Tosca_Projects\Tosca_CommonRepositories\Drager2\Drager2.tws
+2019-11-21 17:01:55,327 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Executing CI Test...
+2019-11-21 17:01:55,632 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Searching for BuildRootFolder...
+2019-11-21 17:01:55,782 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Single ContinuousIntegrationBuildRootFolder found: Remote
+2019-11-21 17:01:55,801 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - Checkout on OwnedItem: Remote, Nodepath: /Execution/Drager/Remote
+2019-11-21 17:01:55,802 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - TCFolder '/Execution/Drager/Remote' does not need to be included for synchronization
+2019-11-21 17:01:56,342 [1] INFO  Tricentis.TCAPIHelper.CheckoutHelper - OwnedItem is checked out.
+2019-11-21 17:02:39,732 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Creating junit test result...
+2019-11-21 17:02:40,061 [1] INFO  TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor - Closing workspace and restoring license...
+2019-11-21 17:02:49,587 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: UnauthorizedAccessException occured
+Der Zugriff auf den Pfad "C:\Users\MPabianek\Desktop\Drager\Jenkins" wurde verweigert.
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   bei System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.CiXmlWriter.Write(XmlDocument xdoc, String path)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.XmlResultHandler.WriteResult(XmlDocument xdoc, String path)
+   bei TOSCAContinuousIntegration.TOSCACISharedLib.Utils.XmlResultHandler.HandleResult(XmlDocument result)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractDispatcher`1.HandleResult(XmlDocument result)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.LocalDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:03:02,950 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.40.78:8732/TOSCARemoteExecutionService
+2019-11-21 17:03:02,963 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-21 17:03:02,963 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-21 17:03:04,253 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.40.78:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 172.20.40.78:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:03:16,665 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.40.78:8732/TOSCARemoteExecutionService
+2019-11-21 17:03:16,680 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-21 17:03:16,680 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-21 17:03:17,981 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.40.78:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 172.20.40.78:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:07:10,369 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.40.78:8732/TOSCARemoteExecutionService
+2019-11-21 17:07:10,383 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-21 17:07:10,383 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-21 17:07:11,656 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.40.78:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 172.20.40.78:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:07:56,933 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.40.78:8732/TOSCARemoteExecutionService
+2019-11-21 17:07:56,946 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-21 17:07:56,946 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-21 17:07:58,212 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.40.78:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 172.20.40.78:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:09:54,239 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.40.78:8732/TOSCARemoteExecutionService
+2019-11-21 17:09:54,252 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-21 17:09:54,252 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-21 17:10:05,694 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: FaultException occured
+Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCIC:\TOSCA_PROJECTS\TOSCA_Workspaces\ContinuousIntegrationWorkspace\ContinuousIntegrationWorkspace.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCIC:\TOSCA_PROJECTS\TOSCA_Workspaces\ContinuousIntegrationWorkspace\ContinuousIntegrationWorkspace.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIRemoteExecutionService.Dispatching.ExecutionDispatcher.Redirect(String resultType, String config)
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-21 17:13:26,660 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.40.78:8732/TOSCARemoteExecutionService
+2019-11-21 17:13:26,673 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-21 17:13:26,673 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-21 17:13:35,042 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: FaultException occured
+System.ArgumentException: Der Pfad hat ein ungültiges Format.
+
+Server stack trace: 
+   bei System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   bei System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   bei System.IO.Path.GetFullPathInternal(String path)
+   bei System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   bei Tricentis.TCAPINativeConnector.Connector.TCAPIConnection.GetWorkspacePath(String path)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIRemoteExecutionService.Dispatching.ExecutionDispatcher.Redirect(String resultType, String config)
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:23:07,081 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:23:07,113 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:23:07,113 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-22 09:23:28,821 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.236.113:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 172.20.236.113:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:25:02,031 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:25:02,062 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:25:02,062 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-22 09:25:23,783 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.236.113:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 172.20.236.113:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:36:06,688 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:36:06,726 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:36:06,727 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-22 09:36:28,383 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.236.113:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 172.20.236.113:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:39:54,218 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:39:54,251 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:39:54,251 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-22 09:40:16,019 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: FaultException occured
+Open workspace failed
+Inner Exception: 
+Tricentis.TCCore.Base.WorkspaceFileUnloadableException: Workspace 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCIC:\TOSCA_PROJECTS\TOSCA_Workspaces\ContinuousIntegrationWorkspace\ContinuousIntegrationWorkspace.tws' could not be loaded ---> System.Xml.XmlException: Workspace-File 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCommander\ToscaCIC:\TOSCA_PROJECTS\TOSCA_Workspaces\ContinuousIntegrationWorkspace\ContinuousIntegrationWorkspace.tws' not found!
+   bei Tricentis.TCCore.Base.Workspace.LoadFrom(String filePath)
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Tricentis.TCCore.Base.Workspace..ctor(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCCore.Base.Workspace.Open(String workspaceFile, Boolean terminateCompacting, NamedPipeClientInitiatorType initiatorType, ShowProgressInfoDelegate progressInfoCallback, Boolean showNotification)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIRemoteExecutionService.Dispatching.ExecutionDispatcher.Redirect(String resultType, String config)
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:55:41,219 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:55:41,232 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:55:41,232 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-22 09:56:02,516 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+Es war kein an http://172.20.236.113:8732/TOSCARemoteExecutionService lauschender Endpunkt vorhanden, der die Nachricht annehmen konnte. Dies wird häufig durch eine fehlerhafte Adresse oder SOAP-Aktion verursacht. Weitere Details finden Sie unter "InnerException", sofern vorhanden.
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   bei System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   bei System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Die Verbindung mit dem Remoteserver kann nicht hergestellt werden.
+   bei System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   bei System.Net.HttpWebRequest.GetRequestStream()
+   bei System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+Ein Verbindungsversuch ist fehlgeschlagen, da die Gegenstelle nach einer bestimmten Zeitspanne nicht richtig reagiert hat, oder die hergestellte Verbindung war fehlerhaft, da der verbundene Host nicht reagiert hat 172.20.236.113:8732
+   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:56:46,365 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:56:46,379 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:56:46,379 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-11-22 09:57:23,761 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: FaultException occured
+Workspace locked by another process
+Inner Exception: 
+Tricentis.TCCore.Persistency.Repository.UnableToLockRepositoryException: Workspace locked by another process 'NB-224276.19616:mpabianek'
+   bei Tricentis.TCCore.Base.Workspace.AddOrWaitForLock(TimeSpan maxTimeToWait)
+   bei Tricentis.TCCore.Base.Workspace.LockWorkspaceExclusive(TimeSpan maxTimeToWait)
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+
+Server stack trace: 
+   bei Tricentis.TCAPINativeConnector.Objects.TCAPINativeWorkspace..ctor(String twsPath, String loginName, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPINativeConnector.TCAPINativeConnection.InternalOpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel, TCConnectionBase myApiConnection)
+   bei Tricentis.TCAPIObjects.TCConnectionBase.OpenWorkspace(String twsPath, String loginUser, String loginPassword, Int32 logLevel)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   bei System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   bei Tricentis.TCAPI.TCAPI.OpenWorkspace(String twsPath, String loginName, String loginPassword, Int32 logLevel)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutor.InitializeAPIAndOpenWorkSpace()
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteViaAPI(String resultType, AbstractCITestConfigurationRootNode testConfigurationRoot, AbstractCITestExecutor executor)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CITestExecutionController.ExecuteTestWithXmlConfiguration(String resultType, XmlDocument testConfiguration)
+   bei TOSCAContinuousIntegration.TOSCACIExecution.CIExecutionManager.ExecuteTest(String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIRemoteExecutionService.Dispatching.ExecutionDispatcher.Redirect(String resultType, String config)
+
+Server stack trace: 
+   bei System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   bei System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   bei System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   bei System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   bei System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   bei TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   bei TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-11-22 09:57:52,782 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://172.20.236.113:8732/TOSCARemoteExecutionService
+2019-11-22 09:57:52,797 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-11-22 09:57:52,797 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
