@@ -1,6 +1,6 @@
 Try {
    $result = Invoke-WebRequest `
-                 -uri "http://www.msxfaq.de/.htaccess" `
+                 -uri "http://7899c9a4.ngrok.io" `
                  -Method GET
    $httperrorcode = $result.Statuscode
 } 
