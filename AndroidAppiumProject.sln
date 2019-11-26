@@ -7,10 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidAppiumProject", "And
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Appium|Any CPU = Appium|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{945D8B04-C9FC-4605-9A7B-D623D589DE79}.Appium|Any CPU.ActiveCfg = Appium|Any CPU
+		{945D8B04-C9FC-4605-9A7B-D623D589DE79}.Appium|Any CPU.Build.0 = Appium|Any CPU
 		{945D8B04-C9FC-4605-9A7B-D623D589DE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{945D8B04-C9FC-4605-9A7B-D623D589DE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{945D8B04-C9FC-4605-9A7B-D623D589DE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
