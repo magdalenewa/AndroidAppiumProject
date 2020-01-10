@@ -1,0 +1,8 @@
+pool:
+  vmImage: 'win1803'
+  
+container: tosca:1.0
+
+steps: 
+- script: set
+
