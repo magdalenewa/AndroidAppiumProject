@@ -1,1 +1,6 @@
-
+pool:
+  vmImage: 'win1803'
+  
+steps:
+- script:
+  docker run -v C:\Tosca_Projects\Tosca_Workspaces\Draeger_shared_repository_clone\draeger_shared_repository_0001:C:\Tosca_Projects\Tosca_Workspaces\continuousintegrationworkspace\ test
